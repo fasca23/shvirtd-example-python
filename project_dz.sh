@@ -26,7 +26,7 @@ fi
 
 if [ -f "compose.yaml" ]; then
   echo "Запуск проекта docker compose..."
-  docker compose up -d --build
+  sudo docker compose up -d --build
 else
   echo "Файл compose.yaml не найден"
 fi
